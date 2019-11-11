@@ -1,0 +1,84 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.item6 {
+    grid-area: menu2;
+}
+
+.item7 {
+    grid-area: main2;
+}
+.item8{
+    grid-area: top
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'top top top top top top' 'menu main main main main main' 'main2 main2 main2 main2 main2 menu2';
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-container .item8 {
+    background-image:
+     url('../img/forest-landscape.jpg');
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     width: 100px;
+     height: 200px;   
+     
+}
+
+.grid-container-top {
+    display: grid;
+    grid-template-areas: 'header header header header header header';
+    grid-gap: 10px;
+}
+.grid-container-top .img{
+    width: 100%;
+    height: auto;
+}
+
+.grid-container-bottom {
+    display: grid;
+    grid-template-areas: 'footer footer footer footer footer footer';
+    grid-gap: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.grid-container-top .item1 {
+    
+    border: solid 30px;
+    border-color: rgb(39, 34, 34);
+    color: white;
+    background-color: yellow
+}
+
+.grid-container-bottom .item5 {
+    
+    border: solid 30px;
+    border-color: rgb(39, 34, 34);
+    color: white;
+}
